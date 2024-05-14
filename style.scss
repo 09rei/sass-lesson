@@ -29,6 +29,12 @@ $c-white:#f8f8f8;
         @content;//中身は呼び出し先で設定
     }
 }
+
+//文字サイズrem計算用のfunction
+@function rem($px, $base: 16) {
+    @return $px / $base * 1rem;
+
+}
 /*共通設定*/
 * {
     box-sizing: border-box;
