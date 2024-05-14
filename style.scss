@@ -23,7 +23,6 @@ $c-white:#f8f8f8;
     }
     //作っただけでは無効　呼び出したい場所で呼び出すためには@mixinで作って@include で呼び出し
 }
-
 //レスポンシブル対応
 @mixin pcsize {
     @media (min-width: 769px) {
