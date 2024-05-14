@@ -24,6 +24,12 @@ $c-white:#f8f8f8;
     //作っただけでは無効　呼び出したい場所で呼び出すためには@mixinで作って@include で呼び出し
 }
 
+//レスポンシブル対応
+@mixin pcsize {
+    @media (min-width: 769px) {
+        @content;//中身は呼び出し先で設定
+    }
+}
 /*共通設定*/
 * {
     box-sizing: border-box;
@@ -44,6 +50,10 @@ body {
 
     &__list {
         list-style-type: none;
+
+        @include pcsize {
+            display: flex;
+        }
     }
 
     &__link {
