@@ -61,10 +61,10 @@ body {
             display: flex;
         }
     }
-
+//mixinの呼び出し先
     &__link {
         // color: $c-white;
-        @include circle-btn;
+        @include circle-btn(yellow);
        
 
     // &:hover {
